@@ -7,7 +7,7 @@ function Header() {
     <>
     <header>
         <nav>
-            <img src={logo} alt="logo" id='banner_logo'/>
+            <img src={logo} alt="logo"/>
             <ul>
                 <li><a href="">Accueil</a></li>
                 <li><a href="">A propos</a></li>
