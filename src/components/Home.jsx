@@ -1,8 +1,12 @@
 import React from 'react';
+import Banner from './Home/Banner.jsx'
+import '../styles/Home.scss';
 
 function Home() {
   return (
-    <div>Home_Page</div>
+    <>
+      <Banner />
+    </>
   )
 }
 
