@@ -1,6 +1,7 @@
 import React from 'react'
 import "../../styles/Home/Housings.scss"
 
+
 function Housings() {
   return (
     <figure className='Housings'>

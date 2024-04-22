@@ -4,7 +4,6 @@ import "../styles/Header.scss";
 
 function Header() {
   return (
-    <>
     <header>
         <nav>
             <img src={logo} alt="logo"/>
@@ -14,7 +13,6 @@ function Header() {
             </ul>
         </nav>
     </header>
-    </>
   )
 }
 

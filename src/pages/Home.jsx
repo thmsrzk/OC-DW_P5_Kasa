@@ -1,6 +1,6 @@
 import React from 'react';
-import Banner from './Home/Banner.jsx'
-import HousingGallery from './Home/HousingGallery.jsx';
+import Banner from '../components/Home/Banner.jsx'
+import HousingGallery from '../components/Home/HousingGallery.jsx';
 import '../styles/Home.scss';
 
 function Home() {
