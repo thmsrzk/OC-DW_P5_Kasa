@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../assets/images/Kasa_Logo.png';
 import "../styles/Header.scss";
+import { NavLink } from 'react-router-dom';
 
 function Header() {
   return (
@@ -8,8 +9,8 @@ function Header() {
         <nav>
             <img src={logo} alt="logo"/>
             <ul>
-                <li><a href="">Accueil</a></li>
-                <li><a href="">A propos</a></li>
+                <li><NavLink to="/OC-DW_P5_Kasa/">Accueil</NavLink></li>
+                <li><NavLink to="/OC-DW_P5_Kasa/a-propos">A propos</NavLink></li>
             </ul>
         </nav>
     </header>

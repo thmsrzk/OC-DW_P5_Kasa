@@ -1,17 +1,28 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './styles/App.scss'
-import router from './layout/Router.jsx'
-import { RouterProvider } from 'react-router-dom'
 import Header from './layout/Header.jsx'
 import Footer from './layout/Footer.jsx'
+import Error from './pages/Error';
+import Home from './pages/Home';
+import About from './pages/About';
+import Housing from './pages/Housing';
+
 
 function App() {
   return (
-    <>
-    <Header />
-    <main>
-    <RouterProvider router={router}/>
-    </main>
-    <Footer />
+      <>
+        <Router>
+          <Header />
+          <main>
+                <Routes>
+                    <Route path="/OC-DW_P5_Kasa/" element={<Home />} />
+                    <Route path="/OC-DW_P5_Kasa/404/" element={<Error />} />
+                    <Route path="/OC-DW_P5_Kasa/a-propos/" element={<About />} />
+                    <Route path="/OC-DW_P5_Kasa/fiche-logement/" element={<Housing />} />
+                </Routes>
+          </main>
+          <Footer />
+        </Router>
     </>
   )
 }
