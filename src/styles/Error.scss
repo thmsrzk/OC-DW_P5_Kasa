@@ -1,0 +1,19 @@
+div{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    h1{
+        margin: 0;
+        font-size: 288px;
+        color: #FF6060;
+    }
+    h2{
+        color: #FF6060;
+        font-size: 36px;
+        font-weight: 500;
+    }
+    .go-back{
+        color: black;
+    }
+}

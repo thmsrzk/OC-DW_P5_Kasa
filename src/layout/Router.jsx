@@ -6,19 +6,19 @@ import Housing from '../pages/Housing';
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/OC-DW_P5_Kasa/',
     element: <Home />
   },
   {
-    path: '/fiche-logement',
+    path: '/OC-DW_P5_Kasa/fiche-logement/',
     element: <Housing /> 
   },  
   {
-    path: '/404',
+    path: '/OC-DW_P5_Kasa/404/',
     element: <Error /> 
   },
   {
-    path: '/a-propos',
+    path: '/OC-DW_P5_Kasa/a-propos/',
     element: <About /> 
   }
 ])
