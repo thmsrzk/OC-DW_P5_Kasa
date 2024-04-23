@@ -1,18 +1,20 @@
 import React from 'react'
 import "../../styles/Home/HousingThumbnail.scss"
-import locations from "../../data/logements.json";
 
 
-
-function Housings() {
+function Housings({housingsData}) {
   return (
-    <figure className='Housings'>
-        <img src='' alt='' />
-        <figcaption>
-            <p>Titre de la location</p>
-        </figcaption>
-    </figure>
-  )
-}
+    <>
+      {housingsData.map((housing) => (
+        <figure key={housing.id} className="Housings">
+          <img src={housing.cover} alt={housing.title} />
+          <figcaption>
+            <p>{housing.title}</p>
+          </figcaption>
+        </figure>
+      ))}
+    </>
+  );
+};
 
 export default Housings
