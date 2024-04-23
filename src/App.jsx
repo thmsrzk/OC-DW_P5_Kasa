@@ -16,7 +16,7 @@ function App() {
           <main>
                 <Routes>
                     <Route path="/OC-DW_P5_Kasa/" element={<Home />} />
-                    <Route path="/OC-DW_P5_Kasa/404/" element={<Error />} />
+                    <Route path="*" element={<Error />} />
                     <Route path="/OC-DW_P5_Kasa/a-propos/" element={<About />} />
                     <Route path="/OC-DW_P5_Kasa/fiche-logement/" element={<Housing />} />
                 </Routes>
