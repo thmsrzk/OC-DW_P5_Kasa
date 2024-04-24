@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import '../styles/titleDescription.scss'
+import '../styles/Collapse.scss'
 import arrowIcon from '../assets/icons/arrow.svg'
 
-function TitleDescription({ title, description }) {
+function Collapse({ title, description }) {
     const [isOpen, setIsOpen] = useState(false);
     return (
     <div className={`collapse-container ${isOpen ? 'open' : ''}`}>
@@ -17,4 +17,4 @@ function TitleDescription({ title, description }) {
   )
 }
 
-export default TitleDescription
+export default Collapse
