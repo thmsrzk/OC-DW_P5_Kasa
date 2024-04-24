@@ -1,8 +1,7 @@
 
 
 header{
-    margin: 30px auto;
-    max-width: 1440px;
+    margin: 30px 50px;
     nav{
         display: flex;
         justify-content: space-between;
@@ -22,5 +21,10 @@ header{
                 }
             }
         }
+    }
+
+    @media (min-width: 1440px) {
+        margin: 30px auto;
+        max-width: 1440px;
     }
 }
