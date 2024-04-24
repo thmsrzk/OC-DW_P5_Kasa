@@ -6,10 +6,10 @@ import homeBanner from '../assets/images/Kasa_Home_Banner.png';
 
 function Home() {
   return (
-    <>
+    <section id='home'>
       <Banner imgSrc={homeBanner} imgAlt="Falaises en bord de mer."  text="Chez vous, partout et ailleurs"/>
       <HousingsGallery />
-    </>
+    </section>
   )
 }
 

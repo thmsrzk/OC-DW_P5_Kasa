@@ -1,0 +1,42 @@
+#about {
+    .collapse-container {
+        margin: 30px 0;
+
+        .collapse-title {
+            background-color: #FF6060;
+            border-radius: 5px;
+            color: #FFFFFF;
+            display: flex;
+            justify-content: space-between;
+            h2 {
+                padding: 10px 15px 10px 15px;
+                font-size: 24px;
+                font-weight: 700;
+                margin: 0;
+            }
+            .arrow-icon {
+                padding: 10px 15px 10px 15px;
+                cursor: pointer;
+    
+            }
+            
+        }
+        .collapse-content {
+            overflow: hidden;
+            max-height: 0;
+            transition: max-height 1s ease-out;
+        
+            p {
+                background-color: #F6F6F6;
+                margin: 0;
+                padding: 10px 15px 10px 15px;
+            }
+        }
+    }
+
+    .open {
+        .collapse-content  {
+            max-height: 100px;
+        }
+    }
+}
