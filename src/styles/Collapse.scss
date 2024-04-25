@@ -8,6 +8,8 @@
             color: #FFFFFF;
             display: flex;
             justify-content: space-between;
+            z-index: 2;
+            position: relative;
             h2 {
                 padding: 10px 15px 10px 15px;
                 font-size: 24px;
@@ -17,26 +19,26 @@
             .arrow-icon {
                 padding: 10px 15px 10px 15px;
                 cursor: pointer;
-    
+                transition: transform 0.25s ease-in-out;   
+            }
+            .arrow-icon.rotate {
+                transform: rotate(-180deg);
+                transition: transform 0.25s ease-in-out;
             }
             
         }
         .collapse-content {
             overflow: hidden;
             max-height: 0;
-            transition: max-height 1s ease-out;
+            transition: max-height 0.25s ease-out;
+            border-radius: 1px;
+            margin-top: -4px;
         
             p {
                 background-color: #F6F6F6;
                 margin: 0;
-                padding: 10px 15px 10px 15px;
+                padding: 14px 15px 10px 15px;
             }
-        }
-    }
-
-    .open {
-        .collapse-content  {
-            max-height: 100px;
         }
     }
 }
