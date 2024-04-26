@@ -2,7 +2,7 @@ import React from 'react';
 import Banner from '../components/Banner.jsx'
 import Card from '../components/Home/Card.jsx';
 import '../styles/Home.scss';
-import homeBanner from '../assets/images/Kasa_Home_Banner.png';
+import homeBanner from '../assets/images/Kasa_Home_Banner.webp';
 import cardsData from '../data/logements.json'
 
 function Home() {

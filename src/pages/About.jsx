@@ -2,7 +2,7 @@ import React from 'react';
 import Banner from '../components/Banner.jsx';
 import Collapse from '../components/Collapse.jsx';
 import '../styles/About.scss';
-import aboutBanner from '../assets/images/Kasa_About_Banner.png';
+import aboutBanner from '../assets/images/Kasa_About_Banner.webp';
 
 function About() {
   return (
