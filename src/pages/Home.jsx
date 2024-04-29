@@ -3,7 +3,7 @@ import Banner from '../components/Banner/Banner.jsx'
 import Card from '../components/Card/Card.jsx';
 import './Home.scss';
 import homeBanner from '../assets/images/Kasa_Home_Banner.webp';
-import cardsData from '../data/logements.json'
+import cardsData from '../assets/data/logements.json'
 
 function Home() {
   return (
