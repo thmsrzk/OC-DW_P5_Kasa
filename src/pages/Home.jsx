@@ -1,7 +1,7 @@
 import React from 'react';
-import Banner from '../components/Banner.jsx'
-import Card from '../components/Home/Card.jsx';
-import '../styles/Home.scss';
+import Banner from '../components/Banner/Banner.jsx'
+import Card from '../components/Card/Card.jsx';
+import './Home.scss';
 import homeBanner from '../assets/images/Kasa_Home_Banner.webp';
 import cardsData from '../data/logements.json'
 
@@ -10,7 +10,9 @@ function Home() {
     <section id='home'>
       <Banner imgSrc={homeBanner} imgAlt="Falaises en bord de mer."  text="Chez vous, partout et ailleurs"/>
       <div className='Cards-Gallery'>
-        <Card cardsData={cardsData}/>
+      {cardsData.map((card) => (
+          <Card card={card}/>
+      ))}
       </div>
     </section>
   )

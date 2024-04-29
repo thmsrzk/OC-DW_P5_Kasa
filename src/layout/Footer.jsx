@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/Footer.scss'
+import './Footer.scss'
 import logo from '../assets/images/Kasa_Footer_Logo.png'
 
 function Footer() {
