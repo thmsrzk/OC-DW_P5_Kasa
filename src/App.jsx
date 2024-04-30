@@ -1,4 +1,3 @@
-import './styles/App.scss'
 import AppRouter from './AppRouter.jsx'
 
 
