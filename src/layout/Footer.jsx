@@ -6,7 +6,7 @@ function Footer() {
   return (
     <footer>
         <img src={logo} alt="logo" id='banner_logo'/>
-        <p>© 2020 Kasa. All rights reserved</p>
+        <p>© {(new Date().getFullYear())} Kasa. All rights reserved</p>
     </footer>
   )
 }
