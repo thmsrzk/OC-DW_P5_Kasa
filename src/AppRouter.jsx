@@ -15,7 +15,7 @@ function AppRouter() {
             <Routes>
                 <Route path="/OC-DW_P5_Kasa" element={<Home />} />
                 <Route path="/OC-DW_P5_Kasa/a-propos" element={<About />} />
-                <Route path="/OC-DW_P5_Kasa/fiche-logement" element={<Housing />} />
+                <Route path="/OC-DW_P5_Kasa/fiche-logement/:id" element={<Housing />} />
                 <Route path="*" element={<Error />} />
             </Routes>
       </main>

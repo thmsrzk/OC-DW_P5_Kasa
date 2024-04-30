@@ -11,7 +11,7 @@ function Home() {
       <Banner imgSrc={homeBanner} imgAlt="Falaises en bord de mer."  text="Chez vous, partout et ailleurs"/>
       <div className='Cards-Gallery'>
       {cardsData.map((card) => (
-          <Card card={card} linkBase="/OC-DW_P5_Kasa/fiche-logement/"/>
+          <Card key={card.id} card={card} linkBase="/OC-DW_P5_Kasa/fiche-logement/"/>
       ))}
       </div>
     </section>
