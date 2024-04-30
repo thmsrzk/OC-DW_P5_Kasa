@@ -7,7 +7,9 @@ function Header() {
   return (
     <header>
         <nav>
-            <img src={logo} alt="logo"/>
+            <NavLink to="/OC-DW_P5_Kasa/">  
+              <img src={logo} alt="logo"/>
+            </NavLink>
             <ul>
                 <li>
                   <NavLink to="/OC-DW_P5_Kasa/" className={useMatch("/OC-DW_P5_Kasa/") ? 'active-link' : ''}>
