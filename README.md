@@ -5,7 +5,6 @@ This project was bootstrapped with [Vite](https://github.com/vitejs/vite).
 In the project directory, you can run:
 ### `yarn install`
 (you can use 'npm' instead of 'yarn' depending on your preferences)
-then
 ### `yarn run dev`
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
