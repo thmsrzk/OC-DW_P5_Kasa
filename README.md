@@ -1,20 +1,11 @@
 # React + Vite
-
-# Getting Started with Vite
-
 This project was bootstrapped with [Vite](https://github.com/vitejs/vite).
 
 ## Available Scripts
-
 In the project directory, you can run:
-
 ### `yarn install`
-
 then
-
 ### `yarn run dev`
-
-
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
