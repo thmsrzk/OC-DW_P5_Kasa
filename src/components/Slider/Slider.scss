@@ -21,7 +21,11 @@
         border: none;
         outline: none;
         box-shadow: none;
-        padding: 20px;
+        padding: 0 20px;
+        height: 100%;
+        img{
+            cursor: pointer;
+        }
     }
     .next-button{
         position: absolute;

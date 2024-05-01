@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react'
 import './Collapse.scss'
 import arrowIcon from '../../assets/icons/arrow.svg'
 
-function Collapse({ title, description }) {
+function Collapse({ title, children }) {
     const [isOpen, setIsOpen] = useState(false);
     const contentRef = useRef(null);
 
@@ -21,7 +21,7 @@ function Collapse({ title, description }) {
                 <img onClick={() => setIsOpen(!isOpen)} className={`arrow-icon ${isOpen ? 'rotate' : ''}`} src={arrowIcon}></img>
             </div>
             <div ref={contentRef} className="collapse-content">
-                <div className="collapse-text">{description}</div>
+                <div className="collapse-text">{children}</div>
             </div>
         </div>
     )

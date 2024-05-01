@@ -10,8 +10,8 @@ function About() {
     <section id='about'>
       <Banner imgSrc={aboutBanner} imgAlt=""/>
       <div className='about-collapse-container'>
-        {aboutInfos.map((info) => (
-            <Collapse title={info.title} description={info.description}/>
+        {aboutInfos.map((info, index) => (
+            <Collapse key={index} title={info.title} children={info.description}/>
         ))}
       </div>
  
