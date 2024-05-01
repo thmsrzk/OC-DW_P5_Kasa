@@ -4,6 +4,7 @@ This project was bootstrapped with [Vite](https://github.com/vitejs/vite).
 ## Available Scripts
 In the project directory, you can run:
 ### `yarn install`
+(you can use 'npm' instead of 'yarn' depending on your preferences)
 then
 ### `yarn run dev`
 
