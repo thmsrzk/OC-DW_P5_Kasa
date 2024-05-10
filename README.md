@@ -1,3 +1,15 @@
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=react" height="30" alt="react logo"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" height="30" alt="sass logo"/>
+</div>
+  
+  ## Project n°5 from Openclassrooms's Web Development training program
+
+<img align="center" src="./src/assets/images/P5_Description.png" alt="Project description"/>
+
+<br>
+<br>
+
 # React + Vite
 This project was bootstrapped with [Vite](https://github.com/vitejs/vite).
 
