@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../assets/images/Kasa_Logo.png';
 import "./Header.scss";
+import "./Header_mobile.scss"
 import { NavLink, useMatch } from 'react-router-dom';
 
 function Header() {

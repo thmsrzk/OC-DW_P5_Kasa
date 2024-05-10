@@ -1,0 +1,20 @@
+@media (max-width: 767.99px) {
+    header{
+        margin: 20px;
+        nav{
+            img{
+                width: 145px;
+            }
+            ul{
+                gap: 15px;
+                padding: 0;
+                li{
+                    a{
+                        font-size: 1.1rem;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+}
