@@ -3,17 +3,16 @@ footer{
     margin: 0px 0px !important;
     display: flex;
     flex-direction: column;
+    gap: 20px;
     align-items: center;
     // bottom: 0;
     // position: absolute;
     width: 100%;
-    img{
-        width: 122px;
-        height: 39.44px;
-        padding-top: 40px;
-    }
+    padding: 40px 0px;
+    text-align: center;
     p{
         color: white;
-        padding: 20px 0px;}
         font-size: 24px;
+        margin: 0px;
+    }
 }
