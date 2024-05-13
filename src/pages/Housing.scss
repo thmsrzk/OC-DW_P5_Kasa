@@ -1,47 +1,53 @@
-.title-and-host{
+
+.infos-container{
     display: flex;
     justify-content: space-between;
-    margin: 30px 0;
-    .title-and-location{
+    .housing-infos{
         display: flex;
         flex-direction: column;
         gap: 10px;
-        h1{
-            font-size: 36px;
-            font-weight: 500;
-            color: #FF6060;
-            margin: 0;
+        margin: 30px 0;
+        .title-and-location{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            h1{
+                font-size: 36px;
+                font-weight: 500;
+                color: #FF6060;
+                margin: 0;
+            }
+            p{
+                font-size: 18px;
+                font-weight: 500;
+                margin: 0;
+            }
         }
-        p{
-            font-size: 18px;
-            font-weight: 500;
-            margin: 0;
+        .tags{
+            display: flex;
+            gap: 10px;
+            .tag{
+                display: flex;
+                background-color: #FF6060;
+                border-radius: 10px;
+                text-align: center;
+                max-height: 30px;
+                text-align: center;
+                align-items: center;
+                p{
+                    color: white;
+                    font-size: 14px;
+                    font-weight: 700;
+                    padding: 30px;
+                }
+            }
         }
     }
 }
 
-.tags-and-ratings{
+.host-infos{
     display: flex;
     justify-content: space-between;
-    .tags{
-        display: flex;
-        gap: 10px;
-        .tag{
-            display: flex;
-            background-color: #FF6060;
-            border-radius: 10px;
-            text-align: center;
-            max-height: 30px;
-            text-align: center;
-            align-items: center;
-            p{
-                color: white;
-                font-size: 14px;
-                font-weight: 700;
-                padding: 30px;
-            }
-        }
-    }
 }
 
 .collapses-container{

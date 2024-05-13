@@ -6,6 +6,7 @@ import Host from "../components/Host/Host.jsx";
 import Slider from "../components/Slider/Slider";
 import Collapse from "../components/Collapse/Collapse";
 import "./Housing.scss";
+import "./Housing_mobile.scss";
 
 function Housing() {
   let { id } = useParams();
@@ -21,22 +22,24 @@ function Housing() {
   return (
     <>
       <Slider pictures={housing.pictures} />
-      <div className="title-and-host">
-        <div className="title-and-location">
-          <h1>{housing.title}</h1>
-          <p>{housing.location}</p>
+      <div className="infos-container">
+        <div className="housing-infos">
+          <div className="title-and-location">
+            <h1>{housing.title}</h1>
+            <p>{housing.location}</p>
+          </div>
+          <div className="tags">
+          {housing.tags.map((tag, index) => (
+            <div key={index} className={`tag tag-${index}`}>
+                    <p>{tag}</p>
+                  </div>
+                ))}
+          </div>
         </div>
-        <Host name={housing.host.name} picture={housing.host.picture} />
-      </div>
-      <div className="tags-and-ratings">
-        <div className="tags">
-        {housing.tags.map((tag, index) => (
-                <div key={index} className={`tag tag-${index}`}>
-                  <p>{tag}</p>
-                </div>
-              ))}
+        <div className="host-infos">
+          <Host name={housing.host.name} picture={housing.host.picture} />
         </div>
-      </div>
+      </div>  
       <div className="collapses-container">
         <Collapse title="Description" children={housing.description}/>
         <Collapse title="Équipements">

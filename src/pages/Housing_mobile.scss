@@ -1,0 +1,13 @@
+@media (max-width: 767.99px) {
+
+    .infos-container{
+        flex-direction: column;
+    }
+
+    .collapses-container{
+        flex-direction: column;
+        .collapse-container{
+            width: 100%;
+        }
+    }
+}
