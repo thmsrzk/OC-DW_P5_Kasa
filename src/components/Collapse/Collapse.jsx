@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react'
 import './Collapse.scss'
+import './Collapse_mobile.scss'
 import arrowIcon from '../../assets/icons/arrow.svg'
 
 function Collapse({ title, children }) {

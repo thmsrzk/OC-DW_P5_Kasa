@@ -3,7 +3,7 @@ import "./Host.scss"
 
 function Host({ name, picture }) {
   return (
-    <div className='host-infos'>
+    <div className='host-profile'>
         <p>{name}</p>
         <img src={picture} alt={`Photo de l'hôte ${name}`}  />
     </div>

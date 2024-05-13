@@ -2,6 +2,11 @@
 
     .infos-container{
         flex-direction: column;
+        margin: 10px 0;
+        .host-infos{
+            flex-direction: row-reverse;
+            align-items: center;
+        }
     }
 
     .collapses-container{

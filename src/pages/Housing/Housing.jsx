@@ -1,10 +1,11 @@
 import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import housings from "../assets/data/logements.json";
-import Error from "./Error";
-import Host from "../components/Host/Host.jsx";
-import Slider from "../components/Slider/Slider";
-import Collapse from "../components/Collapse/Collapse";
+import housings from "../../assets/data/logements.json";
+import Error from "../Error/Error.jsx";
+import Host from "../../components/Host/Host.jsx";
+import Slider from "../../components/Slider/Slider.jsx";
+import Collapse from "../../components/Collapse/Collapse.jsx";
+import Rating from "../../components/Rating/Rating.jsx";
 import "./Housing.scss";
 import "./Housing_mobile.scss";
 
@@ -38,6 +39,7 @@ function Housing() {
         </div>
         <div className="host-infos">
           <Host name={housing.host.name} picture={housing.host.picture} />
+          <Rating/>
         </div>
       </div>  
       <div className="collapses-container">

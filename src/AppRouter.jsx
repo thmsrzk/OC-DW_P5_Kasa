@@ -2,10 +2,10 @@ import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Header from './layout/Header.jsx'
 import Footer from './layout/Footer.jsx'
-import Error from './pages/Error';
-import Home from './pages/Home';
-import About from './pages/About';
-import Housing from './pages/Housing';
+import Error from './pages/Error/Error.jsx';
+import Home from './pages/Home/Home.jsx';
+import About from './pages/About/About.jsx';
+import Housing from './pages/Housing/Housing.jsx';
 
 function AppRouter() {
   return (
