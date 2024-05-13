@@ -5,25 +5,14 @@ import rightArrow from "../../assets/icons/right-arrow.svg";
 
 function Slider({ pictures }) {
   const [sliderIndex, setSliderIndex] = useState(1);
+  const picturesLength = pictures.length;
 
   function prevImage() {
-    let newState;
-    if (sliderIndex - 1 < 1) {
-      newState = pictures.length;
-    } else {
-      newState = sliderIndex - 1;
-    }
-    setSliderIndex(newState);
+    setSliderIndex((prev) => (prev <= 1 ? picturesLength : --prev));
   }
 
   function nextImage() {
-    let newState;
-    if (sliderIndex + 1 > pictures.length) {
-      newState = 1;
-    } else {
-      newState = sliderIndex + 1;
-    }
-    setSliderIndex(newState);
+    setSliderIndex((next) => (next >= picturesLength ? 1 : ++next));
   }
 
   return (

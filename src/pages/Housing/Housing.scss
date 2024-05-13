@@ -26,6 +26,7 @@
         .tags{
             display: flex;
             gap: 10px;
+            flex-wrap: wrap;
             .tag{
                 display: flex;
                 background-color: #FF6060;
