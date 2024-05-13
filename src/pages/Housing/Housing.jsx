@@ -39,7 +39,7 @@ function Housing() {
         </div>
         <div className="host-infos">
           <Host name={housing.host.name} picture={housing.host.picture} />
-          <Rating/>
+          <Rating rateValue={housing.rating}/>
         </div>
       </div>  
       <div className="collapses-container">
