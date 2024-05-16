@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PropTypes from 'prop-types';
 import "./Slider.scss";
 import leftArrow from "../../assets/icons/left-arrow.svg";
 import rightArrow from "../../assets/icons/right-arrow.svg";
@@ -28,5 +29,9 @@ function Slider({ pictures }) {
     </div>
   );
 }
+
+Slider.propTypes = {
+  pictures: PropTypes.array.isRequired
+};
 
 export default Slider;

@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import { Link } from "react-router-dom";
 import "./Card.scss";
 
@@ -14,5 +15,14 @@ function Cards({ card, linkBase }) {
     </Link>
   );
 }
+
+Cards.propTypes = {
+  card: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    cover: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired
+  }).isRequired,
+  linkBase: PropTypes.string.isRequired
+};
 
 export default Cards;

@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react'
+import PropTypes from 'prop-types';
 import './Collapse.scss'
 import './Collapse_mobile.scss'
 import arrowIcon from '../../assets/icons/arrow.svg'
@@ -27,5 +28,13 @@ function Collapse({ title, children }) {
         </div>
     )
 }
+
+Collapse.propTypes = {
+  title: PropTypes.string.isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.array
+  ]).isRequired
+};
 
 export default Collapse

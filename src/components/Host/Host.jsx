@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 import "./Host.scss"
 
 function Host({ name, picture }) {
@@ -9,5 +10,10 @@ function Host({ name, picture }) {
     </div>
   )
 }
+
+Host.propTypes = {
+  name: PropTypes.string.isRequired,
+  picture: PropTypes.string.isRequired
+};
 
 export default Host

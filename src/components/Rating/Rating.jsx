@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 import './Rating.scss'
 import './Rating_mobile.scss'
 import activeStar from '../../assets/icons/active-star.svg'
@@ -17,5 +18,9 @@ function Rating({ rateValue }) {
     </div>
   )
 }
+
+Rating.propTypes = {
+  rateValue: PropTypes.number.isRequired
+};
 
 export default Rating
