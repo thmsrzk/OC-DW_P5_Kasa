@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import housings from "../../assets/data/logements.json";
 import Error from "../Error/Error.jsx";
@@ -15,8 +15,13 @@ function Housing() {
 
   const housing = housings.find((housing) => housing.id === id);
 
+  useEffect(() => {
+    if (!housing) {
+      navigate("/OC-DW_P5_Kasa/404");
+    }
+  }, [housing, navigate]);
+
   if (!housing) {
-    navigate("/OC-DW_P5_Kasa/404");
     return <Error />;
   }
 
@@ -30,11 +35,11 @@ function Housing() {
             <p>{housing.location}</p>
           </div>
           <div className="tags">
-          {housing.tags.map((tag, index) => (
-            <div key={index} className={`tag tag-${index}`}>
-                    <p>{tag}</p>
-                  </div>
-                ))}
+            {housing.tags.map((tag, index) => (
+              <div key={index} className={`tag tag-${index}`}>
+                <p>{tag}</p>
+              </div>
+            ))}
           </div>
         </div>
         <div className="host-infos">
@@ -45,11 +50,11 @@ function Housing() {
       <div className="collapses-container">
         <Collapse title="Description" children={housing.description}/>
         <Collapse title="Équipements">
-            <ul>
-              {housing.equipments.map((equipment, index) => (
-                <li key={index}>{equipment}</li>
-              ))}
-            </ul>
+          <ul>
+            {housing.equipments.map((equipment, index) => (
+              <li key={index}>{equipment}</li>
+            ))}
+          </ul>
         </Collapse>
       </div>
     </>
