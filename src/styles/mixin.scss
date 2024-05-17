@@ -1,0 +1,32 @@
+// colors -------------------------------------------------------------------
+$kasa-main-color: #FF6060;
+
+// media queries ------------------------------------------------------------
+$breakpoints: (
+    mobile: (
+        max: 767.98px,
+    ),
+    widescreen: (
+        min: 1439.98px,
+    )
+);
+
+@mixin respond-to($breakpoint) {
+    $breakpoint-value: map-get($breakpoints, $breakpoint);
+    $min: map-get($breakpoint-value, min);
+    $max: map-get($breakpoint-value, max);
+
+    @if $min != null and $max != null {
+        @media (min-width: $min) and (max-width: $max) {
+            @content;
+        }
+    } @else if $min != null {
+        @media (min-width: $min) {
+            @content;
+        }
+    } @else if $max != null {
+        @media (max-width: $max) {
+            @content;
+        }
+    }
+}

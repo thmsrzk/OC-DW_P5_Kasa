@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types';
 import './Rating.scss'
-import './Rating_mobile.scss'
 import activeStar from '../../assets/icons/active-star.svg'
 import inactiveStar from '../../assets/icons/inactive-star.svg'
 

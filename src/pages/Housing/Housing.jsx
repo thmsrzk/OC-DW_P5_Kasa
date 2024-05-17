@@ -7,7 +7,6 @@ import Slider from "../../components/Slider/Slider.jsx";
 import Collapse from "../../components/Collapse/Collapse.jsx";
 import Rating from "../../components/Rating/Rating.jsx";
 import "./Housing.scss";
-import "./Housing_mobile.scss";
 
 function Housing() {
   let { id } = useParams();

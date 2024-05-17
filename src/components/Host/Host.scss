@@ -1,3 +1,5 @@
+@import "../../styles/mixin.scss";
+
 .host-profile{
     display: flex;
     max-width: 167px;
@@ -5,7 +7,7 @@
     justify-content: space-between;
     text-align: end;
     gap: 20px;
-    color: #FF6060;
+    color: $kasa-main-color;
     &:hover{
         text-decoration: underline;
         cursor: pointer;

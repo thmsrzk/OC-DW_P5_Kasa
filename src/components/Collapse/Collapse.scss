@@ -1,8 +1,9 @@
-.collapse-container {
-    margin: 30px 0;
+@import "../../styles/mixin.scss";
 
+.collapse-container {
+    margin: 30px 0; 
     .collapse-title {
-        background-color: #FF6060;
+        background-color: $kasa-main-color;
         border-radius: 5px;
         color: #FFFFFF;
         display: flex;
@@ -32,11 +33,14 @@
         transition: max-height 0.25s ease-out;
         border-radius: 1px;
         margin-top: -4px;
-    
+        
         .collapse-text {
             background-color: #F6F6F6;
             margin: 0;
             padding: 14px 15px 10px 15px;
         }
+    }
+    @include respond-to(mobile){
+            margin: 10px 0;
     }
 }

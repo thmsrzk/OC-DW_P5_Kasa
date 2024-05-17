@@ -2,7 +2,6 @@ import React from 'react';
 import Banner from '../../components/Banner/Banner.jsx'
 import Card from '../../components/Card/Card.jsx';
 import './Home.scss';
-import './Home_mobile.scss';
 import homeBanner from '../../assets/images/Kasa_Home_Banner.webp';
 import cardsData from '../../assets/data/logements.json'
 

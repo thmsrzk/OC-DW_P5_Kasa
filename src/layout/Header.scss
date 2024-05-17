@@ -1,3 +1,5 @@
+@import "../styles/mixin.scss";
+
 header{
     margin: 50px 50px;
     nav{
@@ -20,8 +22,25 @@ header{
             }
         }
     }
-
-    @media (min-width: 1440px) {
+    @include respond-to(mobile) {
+            margin: 20px;
+            nav{
+                img{
+                    width: 145px;
+                }
+                ul{
+                    gap: 15px;
+                    padding: 0;
+                    li{
+                        a{
+                            font-size: 1.1rem;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            }
+    }
+    @include respond-to(widescreen) {
         margin: 50px auto;
         max-width: 1440px;
     }

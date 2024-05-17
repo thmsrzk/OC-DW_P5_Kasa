@@ -1,7 +1,15 @@
+@import "../../styles/mixin.scss";
+
 .rating-container{
     display: flex;
     img{
         width: 36px;
         height: 36px;
+    }
+    @include respond-to(mobile) {
+        img{
+            width: 24px;
+            height: 24px;
+        }
     }
 }

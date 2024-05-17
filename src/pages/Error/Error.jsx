@@ -1,6 +1,5 @@
 import React from 'react'
 import "./Error.scss"
-import "./Error_mobile.scss"
 import { NavLink } from 'react-router-dom';
 
 function Error() {

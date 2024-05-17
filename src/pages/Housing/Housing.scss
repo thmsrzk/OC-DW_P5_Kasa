@@ -1,3 +1,5 @@
+@import "../../styles/mixin.scss";
+
 
 .infos-container{
     display: flex;
@@ -14,7 +16,7 @@
             h1{
                 font-size: 36px;
                 font-weight: 500;
-                color: #FF6060;
+                color: $kasa-main-color;
                 margin: 0;
             }
             p{
@@ -29,11 +31,10 @@
             flex-wrap: wrap;
             .tag{
                 display: flex;
-                background-color: #FF6060;
+                background-color: $kasa-main-color;
                 border-radius: 10px;
                 text-align: center;
                 max-height: 30px;
-                text-align: center;
                 align-items: center;
                 p{
                     color: white;
@@ -63,4 +64,24 @@
         list-style: none;
         padding: 0;
       }
+}
+
+
+@include respond-to(mobile) {
+
+    .infos-container{
+        flex-direction: column;
+        margin: 10px 0;
+        .host-infos{
+            flex-direction: row-reverse;
+            align-items: center;
+        }
+    }
+
+    .collapses-container{
+        flex-direction: column;
+        .collapse-container{
+            width: 100%;
+        }
+    }
 }
