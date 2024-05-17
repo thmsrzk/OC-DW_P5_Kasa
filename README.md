@@ -5,7 +5,7 @@
   
   ## Project n°5 from Openclassrooms's Web Development training program
 
-<img align="center" src="./src/assets/images/P5_Description.png" alt="Project description"/>
+<img align="center" src="./src/assets/images/ignore/P5_Description.png" alt="Project description"/>
 
 <br>
 <br>

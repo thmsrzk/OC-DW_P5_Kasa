@@ -19,13 +19,17 @@ function Slider({ pictures }) {
   return (
     <div className="slider">
         <img src={pictures[sliderIndex - 1]} alt={`Slide ${sliderIndex}`} className="slider-img"/>
-        <button onClick={prevImage} className="navigation-button prev-button">
-            <img src={leftArrow} alt="previous image" />
-        </button>
-        <button onClick={nextImage} className="navigation-button next-button">
-            <img src={rightArrow} alt="next image" />
-        </button>
-        <p className="index-info">{sliderIndex} / {pictures.length}</p>
+        {picturesLength > 1 && (
+          <>
+            <button onClick={prevImage} className="navigation-button prev-button">
+                <img src={leftArrow} alt="previous image" />
+            </button>
+            <button onClick={nextImage} className="navigation-button next-button">
+                <img src={rightArrow} alt="next image" />
+            </button>
+            <p className="index-info">{sliderIndex} / {pictures.length}</p>
+          </>
+        )}
     </div>
   );
 }
