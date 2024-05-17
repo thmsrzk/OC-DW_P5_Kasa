@@ -19,7 +19,7 @@ function Rating({ rateValue }) {
 }
 
 Rating.propTypes = {
-  rateValue: PropTypes.number.isRequired
+  rateValue: PropTypes.string.isRequired
 };
 
 export default Rating

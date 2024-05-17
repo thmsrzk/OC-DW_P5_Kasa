@@ -27,12 +27,11 @@ function Collapse({ title, children }) {
         </div>
     )
 }
-
 Collapse.propTypes = {
   title: PropTypes.string.isRequired,
   children: PropTypes.oneOfType([
     PropTypes.string,
-    PropTypes.array
+    PropTypes.object
   ]).isRequired
 };
 
