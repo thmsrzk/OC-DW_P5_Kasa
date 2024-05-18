@@ -1,87 +1,84 @@
 @import "../../styles/mixin.scss";
 
-
-.infos-container{
-    display: flex;
-    justify-content: space-between;
-    margin: 30px 0;
-    .housing-infos{
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
-        .title-and-location{
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            h1{
-                font-size: 36px;
-                font-weight: 500;
-                color: $kasa-main-color;
-                margin: 0;
-            }
-            p{
-                font-size: 18px;
-                font-weight: 500;
-                margin: 0;
-            }
-        }
-        .tags{
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-            .tag{
-                display: flex;
-                background-color: $kasa-main-color;
-                border-radius: 10px;
-                text-align: center;
-                max-height: 30px;
-                align-items: center;
-                p{
-                    color: white;
-                    font-size: 14px;
-                    font-weight: 700;
-                    padding: 30px;
-                }
-            }
-        }
-    }
-}
-
-.host-infos{
+.infos-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+  .housing-infos {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-}
-
-.collapses-container{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    .collapse-container{
-        width: 48%;
-    }
-    ul {
-        list-style: none;
-        padding: 0;
+    gap: 25px;
+    .title-and-location {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      h1 {
+        font-size: 36px;
+        font-weight: 500;
+        color: $kasa-main-color;
+        margin: 0;
       }
+      p {
+        font-size: 18px;
+        font-weight: 500;
+        margin: 0;
+      }
+    }
+    .tags {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      .tag {
+        display: flex;
+        background-color: $kasa-main-color;
+        border-radius: 10px;
+        text-align: center;
+        max-height: 30px;
+        align-items: center;
+        p {
+          color: white;
+          font-size: 14px;
+          font-weight: 700;
+          padding: 30px;
+        }
+      }
+    }
+  }
 }
 
+.host-infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.collapses-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  .collapse-container {
+    width: 48%;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+}
 
 @include respond-to(mobile) {
-
-    .infos-container{
-        flex-direction: column;
-        margin: 10px 0;
-        .host-infos{
-            flex-direction: row-reverse;
-            align-items: center;
-        }
+  .infos-container {
+    flex-direction: column;
+    margin: 10px 0;
+    .host-infos {
+      flex-direction: row-reverse;
+      align-items: center;
     }
+  }
 
-    .collapses-container{
-        flex-direction: column;
-        .collapse-container{
-            width: 100%;
-        }
+  .collapses-container {
+    flex-direction: column;
+    .collapse-container {
+      width: 100%;
     }
+  }
 }

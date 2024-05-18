@@ -1,12 +1,12 @@
-import React from 'react'
-import PropTypes from 'prop-types';
-import './Rating.scss'
-import activeStar from '../../assets/icons/active-star.svg'
-import inactiveStar from '../../assets/icons/inactive-star.svg'
+import React from "react";
+import PropTypes from "prop-types";
+import "./Rating.scss";
+import activeStar from "../../assets/icons/active-star.svg";
+import inactiveStar from "../../assets/icons/inactive-star.svg";
 
 function Rating({ rateValue }) {
   return (
-    <div className='rating-container'>
+    <div className="rating-container">
       {Array.from({ length: 5 }).map((_, index) => (
         <img
           key={index}
@@ -15,11 +15,11 @@ function Rating({ rateValue }) {
         />
       ))}
     </div>
-  )
+  );
 }
 
 Rating.propTypes = {
-  rateValue: PropTypes.string.isRequired
+  rateValue: PropTypes.string.isRequired,
 };
 
-export default Rating
+export default Rating;

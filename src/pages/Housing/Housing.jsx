@@ -43,11 +43,11 @@ function Housing() {
         </div>
         <div className="host-infos">
           <Host name={housing.host.name} picture={housing.host.picture} />
-          <Rating rateValue={housing.rating}/>
+          <Rating rateValue={housing.rating} />
         </div>
-      </div>  
+      </div>
       <div className="collapses-container">
-        <Collapse title="Description" children={housing.description}/>
+        <Collapse title="Description" children={housing.description} />
         <Collapse title="Équipements">
           <ul>
             {housing.equipments.map((equipment, index) => (

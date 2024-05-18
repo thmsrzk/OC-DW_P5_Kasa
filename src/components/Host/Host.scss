@@ -1,26 +1,26 @@
 @import "../../styles/mixin.scss";
 
-.host-profile{
+.host-profile {
+  display: flex;
+  max-width: 167px;
+  align-items: center;
+  justify-content: space-between;
+  text-align: end;
+  gap: 20px;
+  color: $kasa-main-color;
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+  }
+  p {
+    font-size: 18px;
+    font-weight: 500;
     display: flex;
-    max-width: 167px;
-    align-items: center;
-    justify-content: space-between;
-    text-align: end;
-    gap: 20px;
-    color: $kasa-main-color;
-    &:hover{
-        text-decoration: underline;
-        cursor: pointer;
-    }
-    img{
-        width: 64px;
-        height: 64px;
-        border-radius: 50%;
-    }
-    p{
-        font-size: 18px;
-        font-weight: 500;
-        display: flex;
-        flex-wrap: wrap;
-    }
+    flex-wrap: wrap;
+  }
 }

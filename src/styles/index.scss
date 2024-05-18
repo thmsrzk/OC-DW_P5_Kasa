@@ -1,17 +1,16 @@
-@import 'mixin';
+@import "mixin";
 
-body{
-    margin : 0px;
-    font-family: Montserrat;
-    main{
-        margin : 30px 50px;
-        @include respond-to(mobile) {
-                margin : 20px !important;
-        }
-        @include respond-to(widescreen){
-                margin : 30px auto;
-                max-width: 1440px;
-        }
+body {
+  margin: 0px;
+  font-family: Montserrat;
+  main {
+    margin: 30px 50px;
+    @include respond-to(mobile) {
+      margin: 20px !important;
     }
-
+    @include respond-to(widescreen) {
+      margin: 30px auto;
+      max-width: 1440px;
+    }
+  }
 }

@@ -1,47 +1,47 @@
 @import "../styles/mixin.scss";
 
-header{
-    margin: 50px 50px;
-    nav{
-        display: flex;
-        justify-content: space-between;
-        ul{
-            display: flex;
-            gap: 80px;
-            list-style: none;
-            li{
-                a{
-                    text-decoration: none;
-                    color: black;
-                    font-size: 24px;
-                    font-weight: 500;
-                }
-                .active-link{
-                    text-decoration: underline;
-                }
-            }
+header {
+  margin: 50px 50px;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    ul {
+      display: flex;
+      gap: 80px;
+      list-style: none;
+      li {
+        a {
+          text-decoration: none;
+          color: black;
+          font-size: 24px;
+          font-weight: 500;
         }
+        .active-link {
+          text-decoration: underline;
+        }
+      }
     }
-    @include respond-to(mobile) {
-            margin: 20px;
-            nav{
-                img{
-                    width: 145px;
-                }
-                ul{
-                    gap: 15px;
-                    padding: 0;
-                    li{
-                        a{
-                            font-size: 1.1rem;
-                            text-transform: uppercase;
-                        }
-                    }
-                }
-            }
+  }
+  @include respond-to(mobile) {
+    margin: 20px;
+    nav {
+      img {
+        width: 145px;
+      }
+      ul {
+        gap: 15px;
+        padding: 0;
+        li {
+          a {
+            font-size: 1.1rem;
+            text-transform: uppercase;
+          }
+        }
+      }
     }
-    @include respond-to(widescreen) {
-        margin: 50px auto;
-        max-width: 1440px;
-    }
+  }
+  @include respond-to(widescreen) {
+    margin: 50px auto;
+    max-width: 1440px;
+  }
 }
