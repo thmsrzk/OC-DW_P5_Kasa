@@ -48,5 +48,8 @@
     position: relative;
     justify-content: flex-end;
     background-color: black;
+    &:hover {
+      box-shadow: none;
+    }
   }
 }
