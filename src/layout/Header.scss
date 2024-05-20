@@ -26,11 +26,13 @@ header {
     margin: 20px;
     nav {
       img {
-        width: 145px;
+        width: 130px;
+        padding-right: 5px;
       }
       ul {
         gap: 15px;
         padding: 0;
+        flex-wrap: wrap;
         li {
           a {
             font-size: 1.1rem;
