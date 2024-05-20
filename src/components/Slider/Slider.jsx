@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import "./Slider.scss";
 import leftArrow from "../../assets/icons/left-arrow.svg";
@@ -15,6 +15,27 @@ function Slider({ pictures }) {
   function nextImage() {
     setSliderIndex((next) => (next >= picturesLength ? 1 : ++next));
   }
+
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      switch (event.keyCode) {
+        case 37: // left arrow key code
+          prevImage();
+          break;
+        case 39: // right arrow key code
+          nextImage();
+          break;
+        default:
+          break;
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, []);
 
   return (
     <div className="slider">
