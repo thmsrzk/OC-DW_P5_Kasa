@@ -8,7 +8,7 @@ import "./About.scss";
 function About() {
   return (
     <section id="about">
-      <Banner imgSrc={aboutBanner} imgAlt="" />
+      <Banner imgSrc={aboutBanner} imgAlt="Montagnes" />
       <div className="about-collapse-container">
         {aboutInfos.map((info, index) => (
           <Collapse

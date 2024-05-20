@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import "./Rating.scss";
-import activeStar from "../../assets/icons/active-star.svg";
-import inactiveStar from "../../assets/icons/inactive-star.svg";
+import fullStar from "../../assets/icons/active-star.svg";
+import emptyStar from "../../assets/icons/inactive-star.svg";
 
 function Rating({ rateValue }) {
   return (
@@ -10,7 +10,7 @@ function Rating({ rateValue }) {
       {Array.from({ length: 5 }).map((_, index) => (
         <img
           key={index}
-          src={index < rateValue ? activeStar : inactiveStar}
+          src={index < rateValue ? fullStar : emptyStar}
           alt={`star ${index + 1}`}
         />
       ))}
