@@ -1,4 +1,5 @@
-@import "../../sass/mixin.scss";
+@import "../../sass/responsive-mixins.scss";
+@import "../../sass/color-variables.scss";
 
 .error-container {
   display: flex;
@@ -8,10 +9,10 @@
   h1 {
     margin: 0;
     font-size: 288px;
-    color: $kasa-main-color;
+    color: $main-color;
   }
   h2 {
-    color: $kasa-main-color;
+    color: $main-color;
     font-size: 36px;
     font-weight: 500;
   }

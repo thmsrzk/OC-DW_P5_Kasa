@@ -1,9 +1,9 @@
-@import "../../sass/mixin.scss";
+@import "../../sass/_responsive-mixins.scss";
+@import "../../sass/_color-variables.scss";
 
 .Cards {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: flex-end;
   border-radius: 10px;
   width: 100%;
@@ -14,7 +14,7 @@
   background-color: black;
   &:hover {
     width: 101%;
-    box-shadow: 0px 0px 25px 5px rgba($kasa-main-color, 0.9);
+    box-shadow: 0px 0px 25px 5px rgba($main-color, 0.9);
     transition: 0.25s;
   }
   figcaption {
@@ -38,18 +38,9 @@
     opacity: 0.8;
   }
   @include respond-to(mobile) {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-end;
-    border-radius: 10px;
-    width: 100%;
-    margin: auto;
-    position: relative;
-    justify-content: flex-end;
-    background-color: black;
     &:hover {
       box-shadow: none;
+      width: 100%;
     }
   }
 }

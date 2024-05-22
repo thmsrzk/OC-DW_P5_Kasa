@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/images/Kasa_Logo.png';
+import logo from '../../assets/images/Kasa_Logo.png';
 import "./Header.scss";
 import { NavLink, useMatch } from 'react-router-dom';
 

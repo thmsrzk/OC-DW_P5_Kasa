@@ -1,9 +1,10 @@
-@import "../../sass/mixin.scss";
+@import "../../sass/responsive-mixins.scss";
+@import "../../sass/_color-variables.scss";
 
 .collapse-container {
   margin: 30px 0;
   .collapse-title {
-    background-color: $kasa-main-color;
+    background-color: $main-color;
     border-radius: 5px;
     color: #ffffff;
     display: flex;
