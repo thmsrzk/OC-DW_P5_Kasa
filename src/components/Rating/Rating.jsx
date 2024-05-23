@@ -4,6 +4,7 @@ import "./Rating.scss";
 import fullStar from "../../assets/icons/active-star.svg";
 import emptyStar from "../../assets/icons/inactive-star.svg";
 
+//Display a rating (on 5) with stars
 function Rating({ rateValue }) {
   return (
     <div className="rating-container">

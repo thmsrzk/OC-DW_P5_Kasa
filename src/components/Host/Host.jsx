@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./Host.scss";
 
+//Display the host's name and profile picture
 function Host({ name, picture }) {
   return (
     <div className="host-profile">

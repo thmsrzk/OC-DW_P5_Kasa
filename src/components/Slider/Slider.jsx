@@ -4,6 +4,7 @@ import "./Slider.scss";
 import leftArrow from "../../assets/icons/left-arrow.svg";
 import rightArrow from "../../assets/icons/right-arrow.svg";
 
+//Display a slider with navigation buttons, keyboard navigation and index information
 function Slider({ pictures }) {
   const [sliderIndex, setSliderIndex] = useState(1);
   const picturesLength = pictures.length;
@@ -16,6 +17,7 @@ function Slider({ pictures }) {
     setSliderIndex((next) => (next >= picturesLength ? 1 : ++next));
   }
 
+  // Add keyboard event listeners for left and right arrow keys
   useEffect(() => {
     const handleKeyDown = (event) => {
       switch (event.keyCode) {

@@ -9,20 +9,23 @@ import Rating from "../../components/Rating/Rating.jsx";
 import "./Housing.scss";
 
 function Housing() {
-  let { id } = useParams();
-  let navigate = useNavigate();
+let { id } = useParams(); // Get the id from the URL parameters
+let navigate = useNavigate();
 
-  const housing = housings.find((housing) => housing.id === id);
+// Try to find an object with a matching id
+const housing = housings.find((housing) => housing.id === id);
 
-  useEffect(() => {
-    if (!housing) {
-      navigate("/OC-DW_P5_Kasa/404");
-    }
-  }, [housing, navigate]);
-
+useEffect(() => {
+  // No matching id? ---> navigate to 404 page
   if (!housing) {
-    return <Error />;
+    navigate("/OC-DW_P5_Kasa/404");
   }
+}, [housing, navigate]); // Runs only when the 'housing' object or 'navigate' function changes
+
+// No matching id? ---> render the 'Error' component
+if (!housing) {
+  return <Error />;
+}
 
   return (
     <>

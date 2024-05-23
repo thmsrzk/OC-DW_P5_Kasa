@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import "./Card.scss";
 
+//Display a card with an image and title, and linking to a detail page
 function Cards({ card, linkBase }) {
   return (
     <Link to={`${linkBase}${card.id}`}>

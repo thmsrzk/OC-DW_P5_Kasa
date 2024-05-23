@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./Banner.scss";
 
+//Display a banner with an image and optional text
 function Banner({ imgSrc, imgAlt, text }) {
   return (
     <div className="banner">

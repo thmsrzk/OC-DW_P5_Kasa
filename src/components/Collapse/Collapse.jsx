@@ -3,17 +3,20 @@ import PropTypes from "prop-types";
 import "./Collapse.scss";
 import arrowIcon from "../../assets/icons/arrow.svg";
 
+//Display a collapsible section with a title and content
 function Collapse({ title, children }) {
   const [isOpen, setIsOpen] = useState(false);
   const contentRef = useRef(null);
 
   useEffect(() => {
-    if (isOpen) {
-      contentRef.current.style.maxHeight = `${contentRef.current.scrollHeight}px`;
-    } else {
-      contentRef.current.style.maxHeight = "0px";
-    }
-  }, [isOpen]);
+  if (isOpen) {
+    // Set the maxHeight to the scrollHeight of the content, allowing content to fully expand if isOpen
+    contentRef.current.style.maxHeight = `${contentRef.current.scrollHeight}px`;
+  } else {
+    //Hide the content if not open
+    contentRef.current.style.maxHeight = "0px";
+  }
+}, [isOpen]); // This effect runs whenever the isOpen state changes.
 
   return (
     <div className="collapse-container">
