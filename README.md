@@ -1,5 +1,6 @@
 <div align="center">
   <img src="https://skillicons.dev/icons?i=react" height="30" alt="react logo"/>
+  <img src="https://skillicons.dev/icons?i=js" height="30" alt="javascript logo"  />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" height="30" alt="sass logo"/>
 </div>
   
