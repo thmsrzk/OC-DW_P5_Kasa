@@ -37,10 +37,21 @@
     .collapse-text {
       background-color: #f6f6f6;
       margin: 0;
-      padding: 14px 15px 10px 15px;
+      padding: 25px 15px;
+      ul {
+        margin: 0;
+      }
     }
   }
   @include respond-to(mobile) {
     margin: 10px 0;
+    .collapse-content {
+      .collapse-text {
+        padding: 20px 10px;
+        ul {
+          margin: 0;
+        }
+      }
+    }
   }
 }
